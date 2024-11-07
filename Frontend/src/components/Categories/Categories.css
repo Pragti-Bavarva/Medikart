@@ -1,0 +1,45 @@
+/* Container for the category buttons */
+.categories-menu {
+  display: flex;
+  gap: 20px; /* Space between categories */
+  position: relative; /* Ensure dropdown is positioned relative to this container */
+}
+
+/* Individual category item styling */
+.category-item {
+  position: relative; /* Ensure dropdown is positioned relative to this category item */
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Dropdown menu styling */
+.subcategory-dropdown {
+  position: absolute;
+  top: 100%; /* Position the dropdown below the category item */
+  left: 0;
+  background-color: #ffffff; /* White background for dropdown */
+  border: 1px solid #ddd; /* Light grey border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 200px; /* Adjust width as needed */
+  z-index: 1000; /* Ensure dropdown appears above other elements */
+  max-height: 300px; /* Optional: Set a max height to handle overflow */
+  overflow-y: auto; /* Add scroll if content exceeds max height */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Style for subcategory items */
+.subcategory-item {
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #5fc5b6; /* Green text color */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Highlight subcategory item on hover */
+.subcategory-item:hover {
+  background-color: #f1f1f1; /* Subtle highlight on hover */
+}

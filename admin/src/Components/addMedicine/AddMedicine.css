@@ -1,0 +1,89 @@
+.addMedicine {
+  width: 100%;
+  margin: 0;
+  padding: 50px;
+  background: #f4f4f4;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+.addMedicine-itemfield {
+  margin-bottom: 25px;
+}
+
+.addMedicine-itemfield p {
+  margin: 0 0 10px;
+  font-weight: bold;
+  color: #2c3e50;
+  font-size: 18px;
+}
+
+.addMedicine-itemfield input,
+.addMedicine-itemfield select,
+.addMedicine-itemfield textarea {
+  width: 100%;
+  padding: 15px;
+  margin-top: 5px;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.addMedicine-itemfield input:focus,
+.addMedicine-itemfield select:focus,
+.addMedicine-itemfield textarea:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.4);
+  background-color: #f9f9f9;
+}
+
+.features-checkboxes input {
+  margin-right: 10px;
+}
+
+.addMedicine-selector {
+  width: 100%;
+  padding: 15px;
+  margin-top: 5px;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.addMedicine-selector:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.4);
+}
+
+.addMedicine-button {
+  display: block;
+  width: 100%;
+  padding: 18px;
+  margin-top: 30px;
+  background-color: #2980b9;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.addMedicine-button:hover {
+  background-color: #1f639a;
+}
+
+.addMedicine-button:active {
+  background-color: #154775;
+  transform: scale(0.98);
+}

@@ -1,0 +1,272 @@
+/* General styles */
+.homepage .shop-bar {
+  margin-top: 5px; /* Adjust this value for the desired spacing */
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f0f4f8; /* Soft light background */
+  color: #333; /* Dark grey for readability */
+}
+/*nav bar*/
+/* src/components/ShopBar.css */
+.shop-bar {
+  background-color: #5f83ed; /* Green color */
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%; /* Full width */
+  max-width: 1450px; /* Adjust this to decrease width */
+  margin: 0 auto; /* Center the bar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Optional: add shadow for a better look */
+
+  /* display: flex; Center the items */
+  /* justify-content: space-between; Add spaces between items */
+  /* align-items: center; Center the items vertically */
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+  cursor: pointer; /* Change cursor on hover */
+  border-radius: 5px; /* Add rounded corners */
+  overflow: visible;
+  height: auto;
+  /* Adjust as needed */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+/* src/components/Categories.css */
+.categories-menu {
+  display: flex;
+  gap: 20px; /* Space between categories */
+  position: relative; /* Ensure dropdown is positioned relative to this container */
+}
+
+.category-item {
+  position: relative; /* Ensure dropdown is positioned relative to this category item */
+  padding: 10px;
+  cursor: pointer;
+}
+
+.subcategory-dropdown {
+  position: absolute;
+  top: 100%; /* Position the dropdown below the category item */
+  left: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 200px; /* Adjust width as needed */
+  z-index: 1000; /* Ensure dropdown appears above other elements */
+  max-height: 300px; /* Optional: Set a max height to handle overflow */
+  overflow-y: auto; /* Add scroll if content exceeds max height */
+}
+
+/* Style for subcategory items */
+.subcategory-item {
+  padding: 5px 10px;
+}
+
+.subcategory-item:hover {
+  background-color: #f4f4f4; /* Highlight on hover */
+}
+
+.front-section{
+   /* background-color: #d1f4f3; Light mint green */
+   height: px; /* Reducing the height */
+   margin-top: 0;
+   display: flex;
+   margin-left: 0px;
+   justify-content: right ;
+   align-items: center;
+   text-align: center;
+}
+
+.front-section .front-content img{
+  /* padding: 100px 100px; */
+  margin-top: 0%;
+  max-width: 500%;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Shadow for image */
+  
+}
+/* Hero Section */
+.hero {
+  
+  display: flex;
+  justify-content: space-between; /* Ensure space between the content */
+  align-items: center; /* Vertically center the content */
+  margin-left: 50px;
+  margin-right: 100px;
+  height: 50vh; /* Adjust this as needed */
+}
+
+.hero-content {
+  background-color: #5f83ed;
+  padding: 30px;
+  border-radius: 12px;
+  flex: 1; /* Allow the content to take up space */
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  margin-left: 150px;
+  width: 500px;
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #5fc5b6;
+  border-radius: 8px 0 0 8px;
+}
+
+.search-button {
+  padding: 12px;
+  font-size: 1rem;
+  background-color: white;
+  border: 2px solid #5fc5b6;
+  border-left: none;
+  border-radius: 0 8px 8px 0;
+}
+
+.front-content img {
+  max-width: 200px;
+  border-radius: 12px;
+  margin-left: 50px; /* Space between the search bar and image */
+}
+
+
+/* Features Section */
+.features {
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 column layout */
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.feature-card {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+}
+
+.feature-card img {
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  color: #0056b3;
+  font-size: 1.3rem;
+}
+
+.feature-card p {
+  color: #666;
+}
+
+/* CTA Section */
+.cta-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f4f8; /* Light grey background */
+  padding: 50px 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Add subtle shadow for effect */
+  margin: 40px 0; /* Add margin to separate it from other sections */
+}
+
+.cta-content {
+  max-width: 600px;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.cta-section p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #28a745; /* Green button for prominence */
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.cta-button:hover {
+  background-color: #218838;
+  transform: scale(1.05); /* Slight scale on hover */
+}
+
+.cta-image img {
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Shadow for image */
+}
+
+/* For smaller screens, make the layout vertical */
+@media (max-width: 768px) {
+  .cta-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-image img {
+    margin-top: 20px;
+    max-width: 100%;
+  }
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  padding: 1px;
+  color: #fff;
+  text-align: center;
+}

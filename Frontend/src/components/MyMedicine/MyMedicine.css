@@ -1,0 +1,98 @@
+.my-medicine {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.create-list {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.create-list input {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 250px;
+}
+
+.create-list button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.create-list button:hover {
+  background-color: #0056b3;
+}
+
+/* Adjust the list container to center it */
+.list {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto; /* Center the list */
+  text-align: center;
+}
+
+.list h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.medicine-card-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows cards to wrap onto the next line if necessary */
+  justify-content: center; /* Centers the cards horizontally */
+  gap: 20px; /* Space between cards */
+}
+
+.medicine-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  width: 200px; /* Adjust width based on how many cards you want in a row */
+}
+
+.medicine-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.medicine-name {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .medicine-card-container {
+    justify-content: flex-start; /* Aligns cards to the start on smaller screens */
+  }
+
+  .medicine-card {
+    width: 45%; /* Adjust width for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .medicine-card {
+    width: 100%; /* Full width for very small screens */
+  }
+}
